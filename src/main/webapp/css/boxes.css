@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+.content-box {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.main-content {
+    min-width: 70vw;
+    width: 100%;
+    flex-flow: column nowrap;
+    overflow: visible;
+    margin: 0;
+}
+
+.sidebar {
+	min-width: 30%;;
+    flex-flow: column nowrap;
+    overflow: auto;;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.box > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1);
+}
+
+.page-nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu, .nav-menu > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.website-name {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tools {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-menu > ul,.tools > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.text-btn {
+	display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+    color: #00ffff;
+    font-family: Arial, sans-serif;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.text-btn:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff00ff;
+    text-shadow: 0 0 1px rgba(255, 0, 255, 0.8);
+}
+
+/* Animaciones de Hover */
+.box:hover, .page-nav:hover, .text-btn:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1);
+    transition: 0.4s ease-in-out;
+}
